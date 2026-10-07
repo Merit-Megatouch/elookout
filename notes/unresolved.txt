@@ -5,5 +5,3 @@
 VideoClass::Line(int, int, int, int) | elookout.so
 VideoClass::GetPixel(int, int) | elookout.so
 VideoClass::SetPixel(unsigned short, unsigned short, int, int, int) | elookout.so
-USBIO::ReadJoystick(short*, short*, unsigned char*, short, short, unsigned char*) | elookout.so
-USBIO::JoystickFound() | elookout.so
