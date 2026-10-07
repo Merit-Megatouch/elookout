@@ -1,0 +1,45 @@
+# Symbols no library, runtime or megatouch-host provides (2026-10-07)
+# megatouch-host loads the game with RTLD_NOW, so each of these must be defined
+# (usually in src/host/loader_services.cpp) before the game will start.
+# symbol | needed by
+RankFunc | elookout.so
+ScreenIsTouched() | elookout.so
+QueFlush(bool) | elookout.so
+VideoClass::Line(int, int, int, int) | elookout.so
+VideoClass::GetPixel(int, int) | elookout.so
+VideoClass::SetPixel(unsigned short, unsigned short, int, int, int) | elookout.so
+xml_gameinfo::enum_GameIds_tag(xml_gameinfo::GameIds, bool) | libcontent.so
+ChainRestClass::GetPicFileName(xml_gameinfo::GameIds, int) | elookout.so
+xml_gamerandom::PICRAND_record::PICRAND_record() | elookout.so
+xml_gamerandom::PICRAND_record::~PICRAND_record() | elookout.so
+xml_gamerandom::PICRAND_record::operator=(xml_gamerandom::PICRAND_record const&) | elookout.so
+RandomizedArrayClass::SetBookMark(unsigned char) | elookout.so
+RandomizedArrayClass::GetNextValue(int) | elookout.so
+RandomizedArrayClass::GotoBookMark(unsigned char) | elookout.so
+RandomizedArrayClass::RandomizedArrayClass(xml_gamerandom::PICRAND_record*, int, unsigned char, unsigned short*) | elookout.so
+RandomizedArrayClass::~RandomizedArrayClass() | elookout.so
+USBIO::ReadJoystick(short*, short*, unsigned char*, short, short, unsigned char*) | elookout.so
+USBIO::JoystickFound() | elookout.so
+Bitmap::CopyFromScreen(int, int, bool) | elookout.so
+Bitmap::CreateSmackTextBox(char const*, FontBase*, signed char, unsigned short, unsigned short, bool) | elookout.so
+Bitmap::CreateColoredTextBoxTTFS(char const*, int, int, int, int, int, int, int, int, int, bool, char*, int) | elookout.so
+Bitmap::LoadJPEG(char*, int, int, unsigned char) | elookout.so
+Settings::Init() | elookout.so
+Settings::Init() | libcontent.so
+Settings::Load() | elookout.so
+Settings::Load() | libcontent.so
+Settings::Cleanup() | elookout.so
+Settings::Cleanup() | libcontent.so
+Settings::Restore(abstract_xml_record const*) | elookout.so
+Settings::Restore(abstract_xml_record const*) | libcontent.so
+Settings::SaveNow() | libcontent.so
+Settings::Settings(char const*, unsigned int) | elookout.so
+Settings::Settings(char const*, unsigned int) | libcontent.so
+Settings::~Settings() | elookout.so
+Settings::~Settings() | libcontent.so
+xml_gamerandom::PICRAND_record::operator!=(xml_gamerandom::PICRAND_record const&) const | elookout.so
+Settings::Key(unsigned int, bool) const | elookout.so
+Settings::Key(unsigned int, bool) const | libcontent.so
+typeinfo for Settings | elookout.so
+typeinfo for Settings | libcontent.so
+typeinfo for xml_gamerandom::PICRAND_record | elookout.so
